@@ -1,0 +1,50 @@
+configuration {
+	display-drun: "Applications: ";
+	display-window: "Windows: ";
+	drun-display-format: "{icon} {name}";
+	modi: "window,run,drun";
+	show-icons: true;
+}
+
+@theme "/dev/null"
+
+* {
+background: #1c1c1c ;
+main-text: #00bbff;
+selected-text:#21a821 ;
+text-color: @main-text;
+background-color: @background;
+}
+
+
+
+window {
+	width: 30%;
+	height: 30%;
+border-color: @main-text;
+border: 15px;
+}
+
+
+element {
+text-color: @main-text;
+padding: 13;
+
+}
+
+element selected {
+text-color: @selected-text;
+}
+
+element-text {
+background-color: inherit;
+text-color: inherit;
+vertical-align: 20;
+}
+
+element-icon {
+size: 30;
+}
+
+
+
